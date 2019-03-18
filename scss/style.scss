@@ -1,7 +1,13 @@
+
+@import 'variables';
+
 *{
 	box-sizing:border-box;
 	padding: 0;
 	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	
 }
 
 // TEXT COLOUR and FONT
@@ -11,15 +17,24 @@ p {
 	font-family: 'Oswald', sans-serif;
 }
 
-// ROW, COL AND PAGE CONTAINER
+.p__about--center p{
+	text-align: center;
+	font-size: 1.125em;
+	font-style: normal;
+	width: 34em;
+	margin: 0 auto;
 
+}
+
+// ROW, COL AND PAGE CONTAINER
 .pageContainer {
 	max-width: 1000px;
+	width: 100vh;
 	margin: 0 auto;
 }
 
 .row{
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     &::after{
         clear: both;
         display: block;
@@ -29,10 +44,64 @@ p {
 
 .col{
     float: left;
-    min-height: 100px;
-    padding-right: 15px;
-    padding-left: 15px;
+    // padding-right: 15px;
+    // padding-left: 15px;
 }
+
+// NAVIGATION
+
+#logo{
+	padding-top: 15px;
+ 	margin-left: 20px;
+ 	width: 20%;
+}
+
+header nav {
+	padding-top: 25px;
+	float: right;
+
+}
+
+header nav ul li {
+    font-family: 'Oswald', sans-serif;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 2em;
+    float: left;
+    padding-right: 30px;
+    text-shadow: $shadow;
+}
+
+nav ul li {
+	width: 26%;
+    text-align: center;
+}
+
+header nav ul li a:hover, #active_nav {
+	border-bottom: 0.2rem solid white;
+}
+
+
+// FOOTER
+
+.footer {
+	height: 50px;
+}
+
+// LINKS
+
+a:link {
+	color: white;
+}
+
+a:visited {
+  	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
 
 /*POSITIONING*/
 
@@ -55,7 +124,16 @@ p {
 
 // COLOURS
 
+.brandColor {
+    background-color: $brandColor;
+}
+
+// .backgroundColor {
+//     background-color: $backgroundColor;
+// }
 
 
+.shadow {
+text-shadow:$shadow
+}
 
-@import 'variables';

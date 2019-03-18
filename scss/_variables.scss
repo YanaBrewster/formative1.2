@@ -4,11 +4,11 @@ $columnWidth: 100% / $columns;
 $mdWidth: 768px;
 $lgWidth: 1200px;
 
-$brandColor: #99CC99;
 
-.brandColor {
-    background-color: $brandColor;
-}
+$brandColor: #99CC99;
+// $backgroundColor: #; 
+$shadow: -3px -3px -3px #CCC;
+
 
 
 @for $i from 1 through $columns{
@@ -50,3 +50,5 @@ $brandColor: #99CC99;
         }
     }
 }
+
+
