@@ -1,0 +1,52 @@
+$columns: 12;
+$columnWidth: 100% / $columns;
+
+$mdWidth: 768px;
+$lgWidth: 1200px;
+
+$brandColor: #99CC99;
+
+.brandColor {
+    background-color: $brandColor;
+}
+
+
+@for $i from 1 through $columns{
+    .col#{$i}{
+        width:$columnWidth * $i;
+    }
+
+    .offset#{$i}{
+        margin-left:$columnWidth * $i;
+    }
+}
+
+
+
+
+@media (min-width: $mdWidth) {
+    @for $i from 1 through $columns{
+        .colM#{$i}{
+            width:$columnWidth * $i;
+        }
+
+        .offsetM#{$i}{
+            margin-left:$columnWidth * $i;
+        }
+    }
+}
+
+
+
+
+@media (min-width: $lgWidth) {
+    @for $i from 1 through $columns{
+        .colL#{$i}{
+            width:$columnWidth * $i;
+        }
+
+        .offsetL#{$i}{
+            margin-left:$columnWidth * $i;
+        }
+    }
+}

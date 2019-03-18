@@ -1,0 +1,61 @@
+*{
+	box-sizing:border-box;
+	padding: 0;
+	margin: 0;
+}
+
+// TEXT COLOUR and FONT
+
+p {
+	color: #333333;
+	font-family: 'Oswald', sans-serif;
+}
+
+// ROW, COL AND PAGE CONTAINER
+
+.pageContainer {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.row{
+    margin-bottom: 15px;
+    &::after{
+        clear: both;
+        display: block;
+        content: '';
+    }
+}
+
+.col{
+    float: left;
+    min-height: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*POSITIONING*/
+
+// .relative{
+// 	position: relative;
+// 	width: 500px;
+// 	top: -100px;
+// 	left: 200px;
+// }
+
+// .fixed{
+// 	position: fixed;
+// 	top: 100px;
+// 	right: 20px;
+// }
+
+// .relative2{
+// 	position: relative;
+// }
+
+// COLOURS
+
+
+
+
+@import 'variables';
