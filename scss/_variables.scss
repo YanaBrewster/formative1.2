@@ -5,10 +5,10 @@ $mdWidth: 768px;
 $lgWidth: 1200px;
 
 
-$brandColor: #99CC99;
+$brand-color: #99CC99;
 // $backgroundColor: #; 
 $shadow: -3px -3px -3px #CCC;
-
+$button-shadow: 2px 2px 4px #0f0f0f;
 
 
 @for $i from 1 through $columns{
