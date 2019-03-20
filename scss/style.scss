@@ -9,7 +9,6 @@
 	margin: 0;
 	text-decoration: none;
 	list-style-type: none;
-	
 }
 
 //IMAGES
@@ -24,6 +23,21 @@
 	right: 0;
 	margin-right: 20px;
 
+}
+
+.p__reviews--center img{
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+// IFRAME
+
+iframe{
+	border: none;
+	width: 100%;
+	height: 333px;
 }
 
 // COLOUR 
@@ -70,8 +84,8 @@ h2{
 
 // ROW, COL AND PAGE CONTAINER
 .page-container {
-	max-width: 1000px;
-	width: 100vh;
+	max-width: 1920px;
+	height: 100vh;
 	margin: 0 auto;
 	padding-top: 151px;
 }
@@ -148,7 +162,7 @@ header nav ul li a:hover, #nav__active {
 	color: white;
 	width: 100%;
 	text-align: left;
-	font-size: 20px;
+	font-size: 16px;
 	text-shadow: $text-shadow;
 }
 
@@ -159,7 +173,7 @@ header nav ul li a:hover, #nav__active {
 	color: white;
 	width: 100%;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	text-shadow: $text-shadow;
 }
 
@@ -170,13 +184,14 @@ header nav ul li a:hover, #nav__active {
 	color: white;
 	width: 100%;
 	text-align: right;
-	font-size: 24px;
+	font-size: 22px;
 	text-shadow: $text-shadow;
 }
 
 
 .footer {
 	padding-top: 25px;
+	bottom: 0;
 	height: 82px;
 	width: 100%;
 	padding-bottom: none !important;
@@ -218,10 +233,11 @@ a:hover {
 .container {
   position: relative;
   width: 100%;
-  max-width: 1000px; 
+  max-width: 1920px; 
 }
 
 .container img {
+  padding: none;
   width: 100%;
   height: auto;
 }
