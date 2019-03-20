@@ -10,20 +10,36 @@
 	
 }
 
-// TEXT COLOUR and FONT
+// TEXT AND COLOUR 
+
+.bg-color--gray{
+background-color: #F2F2F2;
+}
 
 p {
 	color: #333333;
 	font-family: 'Oswald', sans-serif;
+	font-size: 1.25em;
+	width: 34em;
+	text-shadow: $text-shadow;
 }
 
 .p__about--center p{
 	text-align: center;
-	font-size: 1.125em;
-	font-style: normal;
-	width: 34em;
 	margin: 0 auto;
 
+}
+
+.p__reviews--center p{
+	text-align: center;
+	width: 24em;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.img__reviews--center img{
+	text-align: center;
+	margin: 0 auto;
 }
 
 // ROW, COL AND PAGE CONTAINER
@@ -31,15 +47,20 @@ p {
 	max-width: 1000px;
 	width: 100vh;
 	margin: 0 auto;
+	padding-top: 151px;
 }
 
 .row{
-    // margin-bottom: 15px;
+    margin-bottom: 30px;
     &::after{
         clear: both;
         display: block;
         content: '';
     }
+}
+
+.row--no-padding{
+    margin-bottom: none;
 }
 
 .col{
@@ -50,14 +71,26 @@ p {
 
 // NAVIGATION
 
+.navigation {
+	height: 151px; 
+}
+
+.nav__fixed{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+  	width: 100%;
+  	z-index: 1
+}
+
 #logo{
-	padding-top: 15px;
+	padding-top: 25px;
  	margin-left: 20px;
- 	width: 20%;
+ 	width: 446px;
 }
 
 header nav {
-	padding-top: 25px;
+	padding-top: 50px;
 	float: right;
 
 }
@@ -65,11 +98,12 @@ header nav {
 header nav ul li {
     font-family: 'Oswald', sans-serif;
     text-transform: lowercase;
+    font-size: 30px;
     color: #fff;
     font-size: 2em;
     float: left;
-    padding-right: 30px;
-    text-shadow: $shadow;
+    padding-right: 40px;
+    text-shadow: $text-shadow;
 }
 
 nav ul li {
@@ -78,14 +112,58 @@ nav ul li {
 }
 
 header nav ul li a:hover, #nav__active {
-	border-bottom: 0.2rem solid white;
+	border-bottom: 3px solid white;
 }
 
 
 // FOOTER
 
+.p__footer--left p{
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	color: white;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	text-shadow: $text-shadow;
+}
+
+.p__footer--middle p{
+	display: inline-block;
+	float: left;
+	margin-left: 0px;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	text-shadow: $text-shadow;
+}
+
+.p__footer--right p{
+	padding-top: 0px !important;
+	display: inline-block;
+	float: right;
+	color: white;
+	width: 100%;
+	text-align: right;
+	font-size: 24px;
+	text-shadow: $text-shadow;
+}
+
+.fb-logo img{
+	float: right;
+	right: 0;
+	margin-right: 20px;
+
+}
+
 .footer {
-	height: 50px;
+	padding-top: 25px;
+	height: 82px;
+	width: 100%;
+	padding-bottom: none !important;
+	align: center;
 }
 
 // LINKS
@@ -105,15 +183,91 @@ a:hover {
 
 // BUTTON
 
-button {
+.menu--small .btn {
+	text-align: center;
+	background-color:$brand-color;
+	font-size: 25px;
+	color: white;
+	text-shadow: $text-shadow;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 50px;
+	border: none;
+	padding: 2px 25px 2px 25px;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; 
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .p__menu--center p{
+	position: absolute;
+	bottom: 28%;
+	right: 0;
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	width: 24em;
+	text-shadow: $text-shadow;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0px 70px 10px 70px;
+}
+
+.container .btn--menu {
+	position: absolute;
+	bottom: 15%;
+	right: 0;
+	transform: translate(-35%, -20%);
+	-ms-transform: translate(-50%, -50%);
+	cursor: pointer;
+	text-align: center;
 	background-color: hsla(360, 100%, 100%, 0.6);
+	font-size: 40px;
 	color: white;
 	text-shadow: $button-shadow;
 	text-align: center;
-	font-size: 2em;
+	vertical-align: middle;
 	display: inline-block;
-	border: 2px double white;
-	padding: 15px 30px;
+	border-radius: 2px;
+	border: 5px double white;
+	padding: 0px 70px 10px 70px;
+}
+
+.container .btn--reservations {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	cursor: pointer;
+	text-align: center;
+	background-color: hsla(360, 100%, 100%, 0.6);
+	font-size: 40px;
+	color: white;
+	text-shadow: $button-shadow;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	border-radius: 2px;
+	border: 5px double white;
+	padding: 2px 70px 10px 70px;
+}
+
+
+.container .btn:hover {
+  background-color: hsla(360, 100%, 100%, 0.85);
+  color: white;
 }
 
 /*POSITIONING*/
@@ -125,14 +279,12 @@ button {
 // 	left: 200px;
 // }
 
-// .fixed{
-// 	position: fixed;
-// 	top: 100px;
-// 	right: 20px;
+// .relative{
+// 	position: relative;
 // }
 
-// .relative2{
-// 	position: relative;
+// .absolute{
+// 	position: absolute;
 // }
 
 // COLOURS
@@ -146,7 +298,4 @@ button {
 // }
 
 
-.shadow {
-text-shadow:$shadow
-}
 
