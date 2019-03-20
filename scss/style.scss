@@ -1,6 +1,8 @@
 
 @import 'variables';
 
+@import 'mixins';
+
 *{
 	box-sizing:border-box;
 	padding: 0;
@@ -10,11 +12,31 @@
 	
 }
 
-// TEXT AND COLOUR 
+//IMAGES
+
+.img__reviews--center img{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.fb-logo img{
+	float: right;
+	right: 0;
+	margin-right: 20px;
+
+}
+
+// COLOUR 
 
 .bg-color--gray{
-background-color: #F2F2F2;
+	background-color: #F2F2F2;
 }
+
+.brand-color {
+    background-color: $brand-color;
+}
+
+// TEXT
 
 p {
 	color: #333333;
@@ -37,9 +59,13 @@ p {
 	padding: 30px;
 }
 
-.img__reviews--center img{
-	text-align: center;
-	margin: 0 auto;
+// HEADINGS
+
+h2{
+	color: #333333;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	text-shadow: $text-shadow;
 }
 
 // ROW, COL AND PAGE CONTAINER
@@ -65,8 +91,6 @@ p {
 
 .col{
     float: left;
-    // padding-right: 15px;
-    // padding-left: 15px;
 }
 
 // NAVIGATION
@@ -99,8 +123,7 @@ header nav ul li {
     font-family: 'Oswald', sans-serif;
     text-transform: lowercase;
     font-size: 30px;
-    color: #fff;
-    font-size: 2em;
+    color: white;
     float: left;
     padding-right: 40px;
     text-shadow: $text-shadow;
@@ -151,12 +174,6 @@ header nav ul li a:hover, #nav__active {
 	text-shadow: $text-shadow;
 }
 
-.fb-logo img{
-	float: right;
-	right: 0;
-	margin-right: 20px;
-
-}
 
 .footer {
 	padding-top: 25px;
@@ -287,15 +304,8 @@ a:hover {
 // 	position: absolute;
 // }
 
-// COLOURS
 
-.brand-color {
-    background-color: $brand-color;
-}
 
-// .backgroundColor {
-//     background-color: $backgroundColor;
-// }
 
 
 

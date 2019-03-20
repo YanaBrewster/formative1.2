@@ -221,8 +221,20 @@
   text-decoration: none;
   list-style-type: none; }
 
+.img__reviews--center img {
+  text-align: center;
+  margin: 0 auto; }
+
+.fb-logo img {
+  float: right;
+  right: 0;
+  margin-right: 20px; }
+
 .bg-color--gray {
   background-color: #F2F2F2; }
+
+.brand-color {
+  background-color: #99CC99; }
 
 p {
   color: #333333;
@@ -241,9 +253,11 @@ p {
   margin: 0 auto;
   padding: 30px; }
 
-.img__reviews--center img {
-  text-align: center;
-  margin: 0 auto; }
+h2 {
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-shadow: -3px -3px -3px #CCC; }
 
 .page-container {
   max-width: 1000px;
@@ -287,8 +301,7 @@ header nav ul li {
   font-family: 'Oswald', sans-serif;
   text-transform: lowercase;
   font-size: 30px;
-  color: #fff;
-  font-size: 2em;
+  color: white;
   float: left;
   padding-right: 40px;
   text-shadow: -3px -3px -3px #CCC; }
@@ -329,11 +342,6 @@ header nav ul li a:hover, #nav__active {
   text-align: right;
   font-size: 24px;
   text-shadow: -3px -3px -3px #CCC; }
-
-.fb-logo img {
-  float: right;
-  right: 0;
-  margin-right: 20px; }
 
 .footer {
   padding-top: 25px;
@@ -430,7 +438,5 @@ a:hover {
   color: white; }
 
 /*POSITIONING*/
-.brand-color {
-  background-color: #99CC99; }
 
 /*# sourceMappingURL=style.css.map */
