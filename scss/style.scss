@@ -15,6 +15,9 @@
 	display: none;
 }
 
+.invisible {
+ 	visibility: hidden;
+}
 
 
 //IMAGES
@@ -34,8 +37,7 @@
 }
 
 .img__reviews--center img{
-	text-align: center;
-	margin: 0 auto;
+	@include align--center; 
 }
 
 .fb-logo img{
@@ -46,20 +48,20 @@
 }
 
 .p__reviews--center img{
-	text-align: center;
+	@include align--center; 
 	width: 100%;
-	margin: 0 auto;
 }
 .container img {
-  padding: none;
-  width: 100%;
-  height: auto;
+	padding: none;
+	width: 100%;
+	height: auto;
 }
 
 .menu-items img{
 	width: 100%;
 	text-align: center;
 }
+
 
 .review--stars img{
 	width: 50%;
@@ -70,7 +72,7 @@
 
 iframe{
 	border: none;
-	width: 100%;
+	width: $mdWidth;
 }
 
 // COLOUR 
@@ -93,22 +95,20 @@ p {
 }
 
 .p__about--center p{
-	text-align: center;
-	margin: 0 auto;
+	@include align--center; 
+	width:34em;
 }
 
 .p__reviews--center p{
-	text-align: center;
+	@include align--center; 
 	width: 24em;
-	margin: 0 auto;
 	padding: 30px;
 }
 
 .p__reviews--center__mobile p{
-	text-align: center;
-	width: 768;
+	@include align--center; 
+	width: 768px;
 	font-size: 18px;
-	margin: 0 auto;
 	padding: 30px;
 }
 
@@ -121,8 +121,6 @@ p {
 	text-align: center;
 	font-size: 18px;
 	width: 24em;
-	text-shadow: $text-shadow;
-	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
 	padding: 0px 70px 10px 70px;
@@ -206,7 +204,7 @@ h4{
 #logo{
 	padding-top: 25px;
  	margin-left: 20px;
- 	width: 70%;
+ 	width: 50%;
 }
 
 header nav {
@@ -216,13 +214,13 @@ header nav {
 }
 
 header nav ul li {
-    font-family: 'Oswald', sans-serif;
+    @include text-body; 
     text-transform: lowercase;
     font-size: 30px;
     color: white;
     float: left;
     padding-right: 40px;
-    text-shadow: $text-shadow;
+    
 }
 
 nav ul li {
@@ -238,25 +236,16 @@ header nav ul li a:hover, #nav__active {
 // FOOTER
 
 .p__footer--left p{
-	display: inline-block;
-	float: left;
+	@include text-footer;
 	margin-left: 20px;
-	color: white;
-	width: 100%;
 	text-align: left;
 	font-size: 14px;
-	text-shadow: $text-shadow;
 }
 
 .p__footer--middle p{
-	display: inline-block;
-	float: left;
-	margin-left: 0px;
-	color: white;
-	width: 100%;
+	@include text-footer;
 	text-align: center;
 	font-size: 12px;
-	text-shadow: $text-shadow;
 	margin-left: 30px;
 }
 
@@ -268,7 +257,7 @@ header nav ul li a:hover, #nav__active {
 	width: 100%;
 	text-align: right;
 	font-size: 18px;
-	text-shadow: $text-shadow
+
 }
 
 
@@ -299,19 +288,17 @@ a:hover {
 // BUTTON
 
 .menu--small .btn {
-	text-align: center;
+	@include align--center;
 	background-color:$brand-color;
 	font-size: 25px;
 	color: white;
 	text-shadow: $text-shadow;
-	text-align: center;
 	vertical-align: middle;
 	display: inline-block;
 	border-radius: 50px;
 	border: none;
 	padding: 2px 25px 2px 25px;
-	margin: 0 auto;
-
+	margin-bottom: 50px;
 }
 
 .container {
@@ -329,7 +316,6 @@ a:hover {
 	transform: translate(-35%, -20%);
 	-ms-transform: translate(-50%, -50%);
 	cursor: pointer;
-	text-align: center;
 	background-color: hsla(360, 100%, 100%, 0.6);
 	font-size: 40px;
 	color: white;
@@ -349,7 +335,6 @@ a:hover {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	cursor: pointer;
-	text-align: center;
 	background-color: hsla(360, 100%, 100%, 0.6);
 	font-size: 40px;
 	color: white;
@@ -383,6 +368,9 @@ a:hover {
 	display: none;
 }
 
+.invisible {
+ 	visibility: visible;
+}
 
 #logo{
 	padding-top: 25px;
@@ -391,8 +379,7 @@ a:hover {
 }
 
 .p__about--center p{
-	text-align: center;
-	margin: 0 auto;
+	@include align--center;
 	font-size: 22px;
 
 }
@@ -412,7 +399,6 @@ iframe{
 	transform: translate(-35%, -20%);
 	-ms-transform: translate(-50%, -50%);
 	cursor: pointer;
-	text-align: center;
 	background-color: hsla(360, 100%, 100%, 0.6);
 	font-size: 40px;
 	color: white;
@@ -431,7 +417,6 @@ iframe{
 	bottom: 28%;
 	right: 0;
 	cursor: pointer;
-	text-align: center;
 	font-size: 18px;
 	width: 24em;
 	text-shadow: $text-shadow;
@@ -442,36 +427,29 @@ iframe{
 }
 
 .p__footer--left p{
-	display: inline-block;
-	float: left;
+	@include text-footer;
 	margin-left: 20px;
-	color: white;
-	width: 100%;
 	text-align: left;
 	font-size: 16px;
 	text-shadow: $text-shadow;
 }
 
 .p__footer--middle p{
-	display: inline-block;
-	float: left;
+	@include text-footer;
 	margin-left: 0px;
-	color: white;
-	width: 100%;
 	text-align: center;
 	font-size: 16px;
 	text-shadow: $text-shadow;
 }
 
 .p__footer--right p{
-	padding-top: 0px !important;
+	padding-top: none !important;
 	display: inline-block;
 	float: right;
 	color: white;
 	width: 100%;
 	text-align: right;
-	font-size: 22px;
-	text-shadow: $text-shadow;
+	font-size: 18px;
 }
 
 
@@ -489,6 +467,11 @@ iframe{
 
 @media (min-width: $lgWidth) {
 
+.menu-items img{
+	width: 100%;
+	text-align: center;
+}
+
 #menu-icon{
     display: none;
 }
@@ -499,6 +482,10 @@ iframe{
 
 .hide__mobile {
 	display: none;
+}
+
+.invisible {
+ 	visibility: visible;
 }
 
 // IFRAME
@@ -526,7 +513,6 @@ iframe{
 	bottom: 28%;
 	right: 0;
 	cursor: pointer;
-	text-align: center;
 	font-size: 18px;
 	width: 24em;
 	text-shadow: $text-shadow;
@@ -542,7 +528,6 @@ iframe{
 	transform: translate(-35%, -20%);
 	-ms-transform: translate(-50%, -50%);
 	cursor: pointer;
-	text-align: center;
 	background-color: hsla(360, 100%, 100%, 0.6);
 	font-size: 40px;
 	color: white;
@@ -560,7 +545,6 @@ iframe{
 	bottom: 28%;
 	right: 0;
 	cursor: pointer;
-	text-align: center;
 	font-size: 18px;
 	width: 24em;
 	text-shadow: $text-shadow;
@@ -571,22 +555,16 @@ iframe{
 }
 
 .p__footer--left p{
-	display: inline-block;
-	float: left;
+	@include text-footer;
 	margin-left: 20px;
-	color: white;
-	width: 100%;
 	text-align: left;
 	font-size: 16px;
 	text-shadow: $text-shadow;
 }
 
 .p__footer--middle p{
-	display: inline-block;
-	float: left;
+	@include text-footer;
 	margin-left: 0px;
-	color: white;
-	width: 100%;
 	text-align: center;
 	font-size: 16px;
 	text-shadow: $text-shadow;

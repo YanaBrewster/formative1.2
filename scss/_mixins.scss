@@ -10,3 +10,15 @@
 	font-family: 'Oswald', sans-serif;
 	text-shadow: $text-shadow;
 }
+
+@mixin align--center{
+	text-align: center;
+	margin: 0 auto;
+}
+
+@mixin text-footer {
+	display: inline-block;
+	float: left;
+	color: white;
+	width: 100%;
+}
