@@ -294,6 +294,9 @@ p {
   width: 24em;
   padding: 30px; }
 
+.p__reviews--two-cols__mobile p {
+  width: 20em; }
+
 .p__reviews--center__mobile p {
   text-align: center;
   margin: 0 auto;
@@ -438,22 +441,15 @@ header nav ul li a:hover, #nav__active {
   padding-bottom: none !important;
   align: center; }
 
-a:link {
-  color: white; }
-
-a:visited {
-  color: white; }
-
-a:hover {
-  color: white; }
-
 .menu--small .btn {
   text-align: center;
   margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  font-style: bold;
+  text-shadow: -3px -3px -3px #CCC;
   background-color: #99CC99;
   font-size: 25px;
   color: white;
-  text-shadow: -3px -3px -3px #CCC;
   vertical-align: middle;
   display: inline-block;
   border-radius: 50px;
@@ -467,43 +463,54 @@ a:hover {
   max-width: 1920px; }
 
 .container .btn--menu {
+  font-size: 40px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 0px 3px 6px #000000;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
   position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  border: 5px double white;
   bottom: 8%;
   right: -5%;
   transform: translate(-35%, -20%);
-  -ms-transform: translate(-50%, -50%);
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.6);
-  font-size: 40px;
-  color: white;
-  text-shadow: 0px 3px 6px #000000;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  border-radius: 2px;
-  border: 5px double white;
   padding: 0px 70px 10px 70px; }
 
 .container .btn--reservations {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.6);
   font-size: 40px;
   color: white;
+  font-family: 'Oswald', sans-serif;
   text-shadow: 0px 3px 6px #000000;
   text-align: center;
   vertical-align: middle;
   display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   border: 5px double white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 2px 70px 10px 70px; }
 
 .container .btn:hover {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: white; }
+
+a:link {
+  color: white; }
+
+a:visited {
+  color: white; }
+
+a:hover {
   color: white; }
 
 @media (min-width: 1024px) {
@@ -535,21 +542,22 @@ a:hover {
     height: 400px; }
 
   .container .btn--menu {
-    position: absolute;
-    bottom: 15%;
-    right: 0;
-    transform: translate(-35%, -20%);
-    -ms-transform: translate(-50%, -50%);
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.6);
     font-size: 40px;
     color: white;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 0px 3px 6px #000000;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     border: 5px double white;
+    bottom: 15%;
+    right: 0;
+    transform: translate(-35%, -20%);
     padding: 0px 70px 10px 70px; }
 
   .container .p__menu--center p {
@@ -646,21 +654,22 @@ a:hover {
     padding: 0px 70px 10px 70px; }
 
   .container .btn--menu {
-    position: absolute;
-    bottom: 15%;
-    right: 0;
-    transform: translate(-35%, -20%);
-    -ms-transform: translate(-50%, -50%);
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.6);
     font-size: 40px;
     color: white;
+    font-family: 'Oswald', sans-serif;
     text-shadow: 0px 3px 6px #000000;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     border: 5px double white;
+    bottom: 15%;
+    right: 0;
+    transform: translate(-35%, -20%);
     padding: 0px 70px 10px 70px; }
 
   .container .p__menu--center p {

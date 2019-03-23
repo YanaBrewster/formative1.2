@@ -105,6 +105,10 @@ p {
 	padding: 30px;
 }
 
+.p__reviews--two-cols__mobile p{
+	width: 20em;
+}
+
 .p__reviews--center__mobile p{
 	@include align--center; 
 	width: 768px;
@@ -270,29 +274,17 @@ header nav ul li a:hover, #nav__active {
 	align: center;
 }
 
-// LINKS
-
-a:link {
-	color: white;
-}
-
-a:visited {
-  	color: white;
-}
-
-a:hover {
-	color: white;
-}
-
 
 // BUTTON
 
 .menu--small .btn {
 	@include align--center;
+	font-family: 'Oswald', sans-serif;
+	font-style: bold;
+	text-shadow: $text-shadow;
 	background-color:$brand-color;
 	font-size: 25px;
 	color: white;
-	text-shadow: $text-shadow;
 	vertical-align: middle;
 	display: inline-block;
 	border-radius: 50px;
@@ -308,49 +300,39 @@ a:hover {
 }
 
 
-
 .container .btn--menu {
-	position: absolute;
+	@include image-button;
 	bottom: 8%;
 	right: -5%;
 	transform: translate(-35%, -20%);
-	-ms-transform: translate(-50%, -50%);
-	cursor: pointer;
-	background-color: hsla(360, 100%, 100%, 0.6);
-	font-size: 40px;
-	color: white;
-	text-shadow: $button-shadow;
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-	border-radius: 2px;
-	border: 5px double white;
 	padding: 0px 70px 10px 70px;
 }
 
 .container .btn--reservations {
-	position: absolute;
+	@include image-button;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	cursor: pointer;
-	background-color: hsla(360, 100%, 100%, 0.6);
-	font-size: 40px;
-	color: white;
-	text-shadow: $button-shadow;
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-	border-radius: 2px;
-	border: 5px double white;
 	padding: 2px 70px 10px 70px;
 }
 
-
 .container .btn:hover {
-  background-color: hsla(360, 100%, 100%, 0.85);
+  background-color: hsla(360, 100%, 100%, 0.85) !important;
   color: white;
+}
+
+// LINKS
+
+a:link {
+	color: white;
+}
+
+a:visited {
+  	color: white;
+}
+
+a:hover {
+	color: white;
 }
 
 // RESPONSIVE
@@ -393,21 +375,10 @@ iframe{
 }
 
 .container .btn--menu {
-	position: absolute;
+	@include image-button;
 	bottom: 15%;
 	right: 0;
 	transform: translate(-35%, -20%);
-	-ms-transform: translate(-50%, -50%);
-	cursor: pointer;
-	background-color: hsla(360, 100%, 100%, 0.6);
-	font-size: 40px;
-	color: white;
-	text-shadow: $button-shadow;
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-	border-radius: 2px;
-	border: 5px double white;
 	padding: 0px 70px 10px 70px;
 }
 
@@ -522,21 +493,10 @@ iframe{
 	padding: 0px 70px 10px 70px;
 }
 .container .btn--menu {
-	position: absolute;
+	@include image-button;
 	bottom: 15%;
 	right: 0;
 	transform: translate(-35%, -20%);
-	-ms-transform: translate(-50%, -50%);
-	cursor: pointer;
-	background-color: hsla(360, 100%, 100%, 0.6);
-	font-size: 40px;
-	color: white;
-	text-shadow: $button-shadow;
-	text-align: center;
-	vertical-align: middle;
-	display: inline-block;
-	border-radius: 2px;
-	border: 5px double white;
 	padding: 0px 70px 10px 70px;
 }
 
