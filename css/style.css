@@ -254,7 +254,7 @@
   width: 100%; }
 
 .container img {
-  padding: none;
+  padding: 0px;
   width: 100%;
   height: auto; }
 
@@ -279,7 +279,7 @@ iframe {
 p {
   color: #333333;
   font-family: 'Oswald', sans-serif;
-  text-shadow: -3px -3px -3px #CCC;
+  text-shadow: 1px 1px 1px #CCC;
   font-size: 1.25em;
   width: 34em; }
 
@@ -323,23 +323,23 @@ p {
 h2 {
   color: #333333;
   font-family: 'Oswald', sans-serif;
-  font-style: bold;
-  text-shadow: -3px -3px -3px #CCC;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #CCC;
   font-size: 40px; }
 
 h3 {
   color: #333333;
   font-family: 'Oswald', sans-serif;
-  font-style: bold;
-  text-shadow: -3px -3px -3px #CCC;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #CCC;
   font-size: 36px;
   text-align: center; }
 
 h4 {
   color: #333333;
   font-family: 'Oswald', sans-serif;
-  font-style: bold;
-  text-shadow: -3px -3px -3px #CCC;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #CCC;
   font-size: 30px;
   text-align: left;
   padding: 10px; }
@@ -365,7 +365,7 @@ h4 {
     content: ''; }
 
 .row--no-padding {
-  margin-bottom: none; }
+  margin-bottom: 0px; }
 
 .col {
   float: left; }
@@ -392,7 +392,7 @@ header nav {
 header nav ul li {
   color: #333333;
   font-family: 'Oswald', sans-serif;
-  text-shadow: -3px -3px -3px #CCC;
+  text-shadow: 1px 1px 1px #CCC;
   text-transform: lowercase;
   font-size: 30px;
   color: white;
@@ -438,15 +438,15 @@ header nav ul li a:hover, #nav__active {
   bottom: 0;
   height: 82px;
   width: 100%;
-  padding-bottom: none !important;
-  align: center; }
+  padding-bottom: 0px !important;
+  align-content: center; }
 
 .menu--small .btn {
   text-align: center;
   margin: 0 auto;
   font-family: 'Oswald', sans-serif;
-  font-style: bold;
-  text-shadow: -3px -3px -3px #CCC;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #CCC;
   background-color: #99CC99;
   font-size: 25px;
   color: white;
@@ -567,7 +567,7 @@ a:hover {
     cursor: pointer;
     font-size: 18px;
     width: 24em;
-    text-shadow: -3px -3px -3px #CCC;
+    text-shadow: 1px 1px 1px #CCC;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
@@ -581,7 +581,7 @@ a:hover {
     margin-left: 20px;
     text-align: left;
     font-size: 16px;
-    text-shadow: -3px -3px -3px #CCC; }
+    text-shadow: 1px 1px 1px #CCC; }
 
   .p__footer--middle p {
     display: inline-block;
@@ -591,10 +591,10 @@ a:hover {
     margin-left: 0px;
     text-align: center;
     font-size: 16px;
-    text-shadow: -3px -3px -3px #CCC; }
+    text-shadow: 1px 1px 1px #CCC; }
 
   .p__footer--right p {
-    padding-top: none !important;
+    padding-top: 0px !important;
     display: inline-block;
     float: right;
     color: white;
@@ -607,8 +607,8 @@ a:hover {
     bottom: 0;
     height: 82px;
     width: 100%;
-    padding-bottom: none !important;
-    align: center; } }
+    padding-bottom: 0px !important;
+    align-content: center; } }
 @media (min-width: 1920px) {
   .menu-items img {
     width: 100%;
@@ -647,7 +647,7 @@ a:hover {
     cursor: pointer;
     font-size: 18px;
     width: 24em;
-    text-shadow: -3px -3px -3px #CCC;
+    text-shadow: 1px 1px 1px #CCC;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
@@ -679,7 +679,7 @@ a:hover {
     cursor: pointer;
     font-size: 18px;
     width: 24em;
-    text-shadow: -3px -3px -3px #CCC;
+    text-shadow: 1px 1px 1px #CCC;
     text-align: center;
     vertical-align: middle;
     display: inline-block;
@@ -693,7 +693,7 @@ a:hover {
     margin-left: 20px;
     text-align: left;
     font-size: 16px;
-    text-shadow: -3px -3px -3px #CCC; }
+    text-shadow: 1px 1px 1px #CCC; }
 
   .p__footer--middle p {
     display: inline-block;
@@ -703,7 +703,7 @@ a:hover {
     margin-left: 0px;
     text-align: center;
     font-size: 16px;
-    text-shadow: -3px -3px -3px #CCC; }
+    text-shadow: 1px 1px 1px #CCC; }
 
   .p__footer--right p {
     padding-top: 0px !important;
@@ -713,15 +713,15 @@ a:hover {
     width: 100%;
     text-align: right;
     font-size: 22px;
-    text-shadow: -3px -3px -3px #CCC; }
+    text-shadow: 1px 1px 1px #CCC; }
 
   .footer {
     padding-top: 25px;
     bottom: 0;
     height: 82px;
     width: 100%;
-    padding-bottom: none !important;
-    align: center; } }
+    padding-bottom: 0px !important;
+    align-content: center; } }
 /*POSITIONING*/
 
 /*# sourceMappingURL=style.css.map */

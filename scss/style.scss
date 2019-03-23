@@ -52,7 +52,7 @@
 	width: 100%;
 }
 .container img {
-	padding: none;
+	padding: 0px;
 	width: 100%;
 	height: auto;
 }
@@ -184,7 +184,7 @@ h4{
 }
 
 .row--no-padding{
-    margin-bottom: none;
+    margin-bottom: 0px;
 }
 
 .col{
@@ -270,8 +270,8 @@ header nav ul li a:hover, #nav__active {
 	bottom: 0;
 	height: 82px;
 	width: 100%;
-	padding-bottom: none !important;
-	align: center;
+	padding-bottom: 0px !important;
+	align-content: center;
 }
 
 
@@ -280,7 +280,7 @@ header nav ul li a:hover, #nav__active {
 .menu--small .btn {
 	@include align--center;
 	font-family: 'Oswald', sans-serif;
-	font-style: bold;
+	font-weight: bold;
 	text-shadow: $text-shadow;
 	background-color:$brand-color;
 	font-size: 25px;
@@ -414,7 +414,7 @@ iframe{
 }
 
 .p__footer--right p{
-	padding-top: none !important;
+	padding-top: 0px !important;
 	display: inline-block;
 	float: right;
 	color: white;
@@ -429,8 +429,8 @@ iframe{
 	bottom: 0;
 	height: 82px;
 	width: 100%;
-	padding-bottom: none !important;
-	align: center;
+	padding-bottom: 0px !important;
+	align-content: center;
 }
 
 
@@ -547,8 +547,8 @@ iframe{
 	bottom: 0;
 	height: 82px;
 	width: 100%;
-	padding-bottom: none !important;
-	align: center;
+	padding-bottom: 0px !important;
+	align-content: center;
 }
 }
 
